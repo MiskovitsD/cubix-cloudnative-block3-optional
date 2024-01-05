@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application
+  labels:
+    training: block3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      training: block3
+  template:
+    metadata:
+      labels:
+        training: block3
+    spec:
+      containers:
+        - name: application
+          image: quay.io/drsylent/cubix/block3/optional:quarkus3
+          env:
+            - name: FILE_LOCATION
+              value: /deployments/optional.txt
+          resources:
+            limits:
+              memory: 256Mi
+              cpu: "0.5"
+            requests:
+              memory: 256Mi
+              cpu: "0.5"
