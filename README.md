@@ -2,12 +2,6 @@
 
 Miskovits Dániel
 
-# create namespace
-
-```
-kubectl create namespace optional3
-```
-
 # installation / deployment command (1 command)
 
 ```
@@ -23,10 +17,12 @@ kubectl apply -f .\application.yaml -n optional3
 
 2 Kubernetes Service
 ```json
+{"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Connection":["keep-alive"],"Host":["localhost:9080"],"Postman-Token":["4b04b93f-db89-42aa-992f-ac645780b85b"],"User-Agent":["PostmanRuntime/7.36.0"],"custom-header":["postman"]}
 ```
 
 3 Pod directly
 ```json
+{"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Connection":["keep-alive"],"Host":["localhost:9081"],"Postman-Token":["97452bf8-5e1f-4c94-9ed1-e0744096b487"],"User-Agent":["PostmanRuntime/7.36.0"],"custom-header":["postman"]}
 ```
 
 4 Inside the Pod
